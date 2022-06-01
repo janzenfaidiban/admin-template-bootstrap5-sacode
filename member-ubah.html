@@ -126,82 +126,52 @@
                 <div class="card">
                     <div class="card-header d-flex justify-content-between">
                         <div>
-                            <h1>SaCode's Weekend</h1>
+                            <h1>Tambah Member</h1>
                         </div>
                         <div>
-                            <a href="sacodes-weekend-tambah.html" class="btn btn-dark">Tambah</a>
+                            <a href="member.html" class="btn btn-dark bg-light text-dark">Kembali</a>
                         </div>
                     </div>
                     <div class="card-body">
-                        <!-- data table -->
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Topic</th>
-                                    <th scope="col">Speaker</th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Time</th>
-                                    <th scope="col">Aksi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>The Requirements of Competitive Programming</td>
-                                    <td>Nick Imbiri <br>
-                                        <small class="badge badge-sm bg-secondary">Math and Data Science
-                                            Enthusiast</small>
-                                    </td>
-                                    <td>2 Juni 2022</td>
-                                    <td>06.00 PM - 08.00 PM</td>
-                                    <td>
-                                        <a href="sacodes-weekend-detail.html"
-                                            class="btn btn-sm btn-dark bg-light text-dark">Detail</a>
-                                        <a href="sacodes-weekend-ubah.html"
-                                            class="btn btn-sm btn-success bg-light text-success">Ubah</a>
-                                        <a href="#modal-hapus-1"
-                                            class="btn btn-sm btn-danger bg-light text-danger">Hapus</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Fundamentals of UI/UX Design</td>
-                                    <td>Vicky Irmanto <br>
-                                        <small class="badge badge-sm bg-secondary">Graphic Designer
-                                        </small>
-                                    </td>
-                                    <td>2 Juni 2022</td>
-                                    <td>06.00 PM - 08.00 PM</td>
-                                    <td>
-                                        <a href="sacodes-weekend-detail.html"
-                                            class="btn btn-sm btn-dark bg-light text-dark">Detail</a>
-                                        <a href="sacodes-weekend-ubah.html"
-                                            class="btn btn-sm btn-success bg-light text-success">Ubah</a>
-                                        <a href="#modal-hapus-1"
-                                            class="btn btn-sm btn-danger bg-light text-danger">Hapus</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Full Stack Development Using NestJS & ReactJS</td>
-                                    <td>Johan Nasendi <br>
-                                        <small class="badge badge-sm bg-secondary">Web Developer</small>
-                                    </td>
-                                    <td>2 Juni 2022</td>
-                                    <td>06.00 PM - 08.00 PM</td>
-                                    <td>
-                                        <a href="sacodes-weekend-detail.html"
-                                            class="btn btn-sm btn-dark bg-light text-dark">Detail</a>
-                                        <a href="sacodes-weekend-ubah.html"
-                                            class="btn btn-sm btn-success bg-light text-success">Ubah</a>
-                                        <a href="#modal-hapus-1"
-                                            class="btn btn-sm btn-danger bg-light text-danger">Hapus</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- end data data -->
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form action="sacodes-member.html">
+
+                                    <div class="mb-3">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" value="Nick">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" value="Imbiri">
+                                    </div>
+
+                                    <img src="speaker/sacodesweekend-nick-2.png" alt="speaker"
+                                        class="img img-thumbnail mb-2" width="200">
+
+                                    <div class="mb-3">
+                                        <label for="picture" class="form-label">Picture</label>
+                                        <input type="file" class="form-control" id="picture">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="about" class="form-label">About</label>
+                                        <textarea id="about" cols="30" rows="5" class="form-control"></textarea>
+                                    </div>
+
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" checked class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Sebagai draf</label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Tambah</button>
+
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class="card-footer">
